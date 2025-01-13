@@ -1,5 +1,27 @@
 
+:root {
+    --text: #1f1f1f
+}
 
 * {
     box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.hero {
+    padding: 125px 0 195px;
+}
+
+.header-item {
+    font-weight: 500;
+    font-size: 15px;
+    color: #1f1f1f;
 }

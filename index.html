@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <img src="./image/icons/logo.svg" alt="logo bakery" 
-        width="110"
-        height="95">
-        <nav>
-            <ul>
-                <li>Occasions</li>
-                <li>All Categories</li>
-                <li>Gifts and Bundles</li>
-                <li><a href="#">Our Brands</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+
+        <img class="header-img"
+          src="./image/icons/logo.svg"
+          alt="logo bakery"
+          width="110"
+          height="95"
+        />
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">Occasions</li>
+            <li class="header-item">All Categories</li>
+            <li class="header-item">Gifts and Bundles</li>
+            <li class="header-item"><a href="#">Our Brands</a></li>
+            <li class="header-item"><a href="#">About Us</a></li>
+          </ul>
         </nav>
 
-        <div>
-            <ul>
-                <li>
-                    <button>
-                        <img src="./image/icons/search.svg" alt="search icon"
-                        width="24"
-                        height="24">
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <img src="./image/icons/user.svg" alt=""
-                        width="30"
-                        height="30">
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <img src="./image/icons/basket.svg" alt=""
-                        width="30"
-                        height="30">
-                    </button>
-                </li>
-            </ul>
+        <div class="header-content">
+          <ul class="header-options">
+            <li class="header-option">
+              <button class="header-btn">
+                <img class="header-icon"
+                  src="./image/icons/search.svg"
+                  alt="search icon"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </li>
+            <li class="header-option">
+              <button class="header-btn">
+                <img class="header-icon"
+                  src="./image/icons/user.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+              </button>
+            </li>
+            <li class="header-option">
+              <button class="header-btn">
+                <img class="header-icon"
+                  src="./image/icons/basket.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
+      </div>
     </header>
 
-
-   
-</body>
+    <section class="hero">
+        <div class="container">
+        <h1>Support Your Local Artisans</h1>
+        <h2> Discover brands and their stores</h2>
+        <button class="her-btn">Browse brands</button>
+        </div>
+    </section>
+  </body>
 </html>
