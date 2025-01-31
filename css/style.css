@@ -1,27 +1,251 @@
-
-:root {
-    --text: #1f1f1f
-}
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #1f1f1f;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Cormorant", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+/*? font-family: "Cormorant", serif;*/
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1170px;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .header {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .hero {
-    padding: 125px 0 195px;
+  padding: 125px 0 195px;
 }
 
 .header-item {
-    font-weight: 500;
-    font-size: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.hero-title {
+    font-family: "Cormorant", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1f1f1f; 
+}
+
+.hero-subtitle {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 26px;
     color: #1f1f1f;
+}
+
+.hero-btn {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 45px;
+}
+
+.header-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border-width: 1px;
+    border-color: #bfbfbf;
+    border-style: solid;   
+    border-color: #bfbfbf;
+    background-color: transparent;
+}
+
+.header-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.header-link:hover {
+  color: #f98f43
+}
+
+.header.link:active {
+  color: #c97235;
+}
+
+.header-item:hover {
+  color: #f98f43
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  padding: 0;
+}
+
+.header-options {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.offers-title{
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.word-offers {
+  color: #ff8126;
+}
+
+.offers-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.offers-product-btn {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 45px;
+}
+
+.offers-product-old-price {
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #656565;
+}
+
+.offers-product-price {
+  font-weight: 600;
+  font-size: 24px;
+  color: #ff8126;
+}
+
+.offers-product {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  background: #f7f5f0;
+  border-radius: 20px;
+  height: 332px;
+}
+
+.offers-product-name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.offers-products-image {
+  height: 160px;  
+  width: 270px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.benefits-item-desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1f1f1f;
+  font-family: var(--font-family);
+}
+
+.benefits {
+  padding: 80px;
+}
+
+.benefits-item-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 25px;
+  color: #1f1f1f;
+}
+
+.food-facts-list {
+  list-style: none;
+}
+
+.food-facts-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: #ff8126;
+}
+
+.word-your {
+  font-weight: 500;
+  color: #1f1f1f;
+}
+
+.food-facts-desc {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #1f1f1f;
+}
+
+.food-facts-btn {
+  border-radius: 5px;
+  width: 270px;
+  height: 45px;
+  background: #ff8126;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
 }

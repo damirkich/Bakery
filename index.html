@@ -11,6 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -18,21 +21,23 @@
     <header class="header">
       <div class="container">
 
+       <div class="wrapper-header">
         <img class="header-img"
-          src="./image/icons/logo.svg"
-          alt="logo bakery"
-          width="110"
-          height="95"
-        />
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">Occasions</li>
-            <li class="header-item">All Categories</li>
-            <li class="header-item">Gifts and Bundles</li>
-            <li class="header-item"><a href="#">Our Brands</a></li>
-            <li class="header-item"><a href="#">About Us</a></li>
-          </ul>
-        </nav>
+        src="./image/icons/logo.svg"
+        alt="logo bakery"
+        width="110"
+        height="95"
+      />
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">Occasions</li>
+          <li class="header-item">All Categories</li>
+          <li class="header-item">Gifts and Bundles</li>
+          <li class="header-item"><a href="#" class="header-link">Our Brands</a></li>
+          <li class="header-item"><a href="#"  class="header-link">About Us</a></li>
+        </ul>
+      </nav>
+       </div>
 
         <div class="header-content">
           <ul class="header-options">
@@ -73,10 +78,85 @@
 
     <section class="hero">
         <div class="container">
-        <h1>Support Your Local Artisans</h1>
-        <h2> Discover brands and their stores</h2>
-        <button class="her-btn">Browse brands</button>
+        <h1 class="hero-title">Support Your Local Artisans</h1>
+        <h2 class="hero-subtitle"> Discover brands and their stores</h2>
+        <button class="hero-btn">Browse brands</button>
         </div>
+    </section>
+
+    <section class="offers">
+      <div class="container">
+      <h2 class="offers-title title">Latest <span class="word-offers">Offers</span> </h2> 
+      <ul class="offers-list">
+        <li class="offers-product">
+          <img class="offers-products-image" src="./image/offers/Pizza.png" alt="Pizza">
+          <h3 class="offers-product-name">Pepperoni Pizza</h3>
+          <p class="offers-product-price">$19.9 <span class="offers-product-old-price">$24.99</span></p>
+          <button class="offers-product-btn">Quick Shop</button>
+        </li>
+
+        <li class="offers-product">
+          <img class="offers-products-image" src="./image/offers/Pancakes.png" alt="Pancakes">
+          <h3 class="offers-product-name">Baked Pancakes</h3>
+          <p class="offers-product-price">$35.99 <span class="offers-product-old-price">$44.99</span></p>
+          <button class="offers-product-btn">Quick Shop</button>
+        </li>
+
+        <li class="offers-product">
+          <img class="offers-products-image" src="./image/offers/Avocado.png" alt="Avocado">
+          <h3 class="offers-product-name">Avocado</h3>
+          <p class="offers-product-price">$17.99 <span class="offers-product-old-price">$20.99</span></p>
+          <button class="offers-product-btn">Quick Shop</button>
+        </li>
+
+        <li class="offers-product">
+          <img class="offers-products-image" src="./image/offers/Oranges.png" alt="Oranges">
+          <h3 class="offers-product-name">Bunch of Oranges</h3>
+          <p class="offers-product-price">$24.99 <span class="offers-product-old-price">$29.99</span></p>
+          <button class="offers-product-btn">Quick Shop</button>
+        </li>
+
+      </ul>
+    </section>
+  </div>
+
+    <section class="benefits">
+      <div class="container">
+        <h2 class="offers-title title">Why choose <span class="word-offers">the Premium Bakery Quality</span></h2> 
+        <ul class="benefits-list">
+          <li class="benefits-list-item"><img src="./image/icons/telescope.svg" alt="telescope"> 
+            <h3 class="benefits-item-title">Discover new flavours & people</h3>
+          <p class="benefits-item-desc">Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.</p></li>
+          <li class="benefits-list-item"><img src="./image/icons/bank.svg" alt="storage"> 
+          <h3 class="benefits-item-title">Buy wholesale</h3>
+        <p class="benefits-item-desc">We offer bulk formats, variety cases, and discovery boxes so you can save money on delicious foods by buying at wholesale prices. </p>
+          <li class="benefits-list-item"><img src="./image/icons/clap.svg" alt="handshake"> 
+            <h3 class="benefits-item-title">Support your community</h3>
+          <p class="benefits-item-desc">By buying in bulk from local and Canadian producers you are helping grow our local food ecosystem, creating jobs, and supporting families and entrepreneurs in your community.</p></li>
+          <li class="benefits-list-item"><img src="./image/icons/like.svg" alt="like"> 
+            <h3 class="benefits-item-title">Enjoy the best quality</h3>
+          <p class="benefits-item-desc">We only offer great tasting, all natural foods that are better for you, and organic if possible.</p></li>
+          <li class="benefits-list-item"><img src="./image/icons/heart.svg" alt="heart"> 
+            <h3 class="benefits-item-title">Enjoy Club Level Cervice</h3>
+          <p class="benefits-item-desc">As a member of our club, we will make sure you are delighted with our service or we will make it right!</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="food-facts">
+      <div class="container">
+        <h2 class="food-facts-title">Who Makes <span class="word-your">Your Food?</span></h2>
+        <p class="food-facts-desc">Our mission is to help grow the local food ecosystem in BC and across Canada.  Why?</p>
+        <ul class="food-facts-list">
+          <li class="food-facts-item"><p class="food-facts-item-desc">Because it connects us to the land we live on, and to the people who live here.</p></li>
+          <li class="food-facts-item"><p class="food-facts-item-desc">Because it’s more meaningful to cook and eat something made by a person nearby than by some distant corporation</p></li>
+          <li class="food-facts-item"><p class="food-facts-item-desc">Because good local food makes our corner of the world a better place to live</p></li>
+          <li class="food-facts-item"><p class="food-facts-item-desc">Because it supports local jobs</p></li>
+          <li class="food-facts-item"><p class="food-facts-item-desc">Because it makes more sense for the environment</p></li>
+        </ul>
+        <img src="./image/icons/blubery.png" alt="blueberry">
+        <button class="food-facts-btn">Discover our Producers</button>
+      </div>
     </section>
   </body>
 </html>

@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*?
+    управляє позиціонуванням елементів на головній осі від main-start до main-end, тобто вирівнює flex-елементи по ширині flex-контейнера, розподіляючи вільний простір, що залишився, незайнятий flex-елементами:
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+
+  */
+  list-style-type: none;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: firebrick;
+}
+
+.box:nth-child(2n) {
+  background-color: black;
+}
+
+.boxes {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 1608px;
+  align-content: flex-end;
+}
