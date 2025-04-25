@@ -17,17 +17,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="baner">
+      <h2 class="baner-title">Free Delivery over $100. Gift with Purchase over $150</h2>
+      <button class="button-close"><img src="./image/icons/button-close.svg" alt="x"></button>
+    </div>
 
     <header class="header">
       <div class="container">
 
        <div class="wrapper-header">
-        <img class="header-img"
-        src="./image/icons/logo.svg"
-        alt="logo bakery"
-        width="110"
-        height="95"
-      />
+        <svg  width="110" height="95" aria-label="logo">
+          <use href="./image/icons/sprite.svg#logo"></use>
+         </svg>
+
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item">Occasions</li>
@@ -43,32 +45,25 @@
           <ul class="header-options">
             <li class="header-option">
               <button class="header-btn">
-                <img class="header-icon"
-                  src="./image/icons/search.svg"
-                  alt="search icon"
-                  width="24"
-                  height="24"
-                />
+                <svg  width="30" height="30" aria-label="search">
+                  <use href="./image/icons/sprite.svg#search"></use>
+                 </svg>
               </button>
             </li>
             <li class="header-option">
               <button class="header-btn">
-                <img class="header-icon"
-                  src="./image/icons/user.svg"
-                  alt=""
-                  width="30"
-                  height="30"
-                />
+                <i class="fa-regular fa-user"></i>
+                <!-- <svg>
+                  <use href="./image/icons/sprite.svg#user" width="30" height="30" aria-label="user"></use>
+                 </svg> -->
               </button>
             </li>
             <li class="header-option">
               <button class="header-btn">
-                <img class="header-icon"
-                  src="./image/icons/basket.svg"
-                  alt=""
-                  width="30"
-                  height="30"
-                />
+               <svg  width="30" height="30" aria-label="basket">
+                <use href="./image/icons/sprite.svg#basket"></use>
+               </svg>
+               <div class="basket-counter"><span class="basket-quantity">0</span></div>
               </button>
             </li>
           </ul>
@@ -124,19 +119,19 @@
       <div class="container">
         <h2 class="offers-title title">Why choose <span class="word-offers">the Premium Bakery Quality</span></h2> 
         <ul class="benefits-list">
-          <li class="benefits-list-item"><img src="./image/icons/telescope.svg" alt="telescope"> 
+          <li class="benefits-list-item"><svg><use href="./image/icons/telescope.svg" aria-label="telescope" width="30" height="30" ></use></svg>
             <h3 class="benefits-item-title">Discover new flavours & people</h3>
           <p class="benefits-item-desc">Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.</p></li>
-          <li class="benefits-list-item"><img src="./image/icons/bank.svg" alt="storage"> 
+          <li class="benefits-list-item"><svg><use href="./image/icons/bank.svg" aria-label="bank" width="30" height="30" ></use></svg>
           <h3 class="benefits-item-title">Buy wholesale</h3>
         <p class="benefits-item-desc">We offer bulk formats, variety cases, and discovery boxes so you can save money on delicious foods by buying at wholesale prices. </p>
-          <li class="benefits-list-item"><img src="./image/icons/clap.svg" alt="handshake"> 
+          <li class="benefits-list-item"><svg><use href="./image/icons/clap.svg" aria-label="handshake" width="30" height="30" ></use></svg>
             <h3 class="benefits-item-title">Support your community</h3>
           <p class="benefits-item-desc">By buying in bulk from local and Canadian producers you are helping grow our local food ecosystem, creating jobs, and supporting families and entrepreneurs in your community.</p></li>
-          <li class="benefits-list-item"><img src="./image/icons/like.svg" alt="like"> 
+          <li class="benefits-list-item"><svg><use href="./image/icons/like.svg" aria-label="like" width="30" height="30" ></use></svg>
             <h3 class="benefits-item-title">Enjoy the best quality</h3>
           <p class="benefits-item-desc">We only offer great tasting, all natural foods that are better for you, and organic if possible.</p></li>
-          <li class="benefits-list-item"><img src="./image/icons/heart.svg" alt="heart"> 
+          <li class="benefits-list-item"><svg><use href="./image/icons/heart.svg" aria-label="heart" width="30" height="30" ></use></svg>
             <h3 class="benefits-item-title">Enjoy Club Level Cervice</h3>
           <p class="benefits-item-desc">As a member of our club, we will make sure you are delighted with our service or we will make it right!</p></li>
         </ul>
@@ -145,8 +140,9 @@
 
     <section class="food-facts">
       <div class="container">
-        <h2 class="food-facts-title">Who Makes <span class="word-your">Your Food?</span></h2>
-        <p class="food-facts-desc">Our mission is to help grow the local food ecosystem in BC and across Canada.  Why?</p>
+        <div class="food-facts-text">
+        <h2 class="food-facts-title">Who Makes <span class="word-your">Your Food?</span> </h2>
+        <p class="food-facts-desc">Our mission is to help grow the local food ecosystem in BC and across Canada. Why?</p>
         <ul class="food-facts-list">
           <li class="food-facts-item"><p class="food-facts-item-desc">Because it connects us to the land we live on, and to the people who live here.</p></li>
           <li class="food-facts-item"><p class="food-facts-item-desc">Because it’s more meaningful to cook and eat something made by a person nearby than by some distant corporation</p></li>
@@ -154,9 +150,55 @@
           <li class="food-facts-item"><p class="food-facts-item-desc">Because it supports local jobs</p></li>
           <li class="food-facts-item"><p class="food-facts-item-desc">Because it makes more sense for the environment</p></li>
         </ul>
-        <img src="./image/icons/blubery.png" alt="blueberry">
         <button class="food-facts-btn">Discover our Producers</button>
       </div>
+      <div class="food-facts-blueberry"></div>
+        <img src="./image/icons/blubery.png" alt="blueberry" class="blueberry">
+      </div>
     </section>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h3 class="modal-title">Leave your contacts <br> and we will contact u soon</h3>
+
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="name">
+              Name
+            </label>
+            <input name="name" type="text">
+          </div>
+
+          <div class="modal-field">
+            <label for="phone">
+              Phone
+            </label>
+            <input name="phone" type="tel">
+          </div>
+
+          <div class="modal-field">
+            <label for="email">
+              Email
+            </label>
+            <input name="email" type="email">
+          </div>
+
+          <div class="modal-field">
+            <label for="message">
+              Message
+            </label>
+            <textarea rows="5" name="message" id=""></textarea>
+          </div>
+
+          <button type="submit" class="modal-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/945cbc1d36.js" crossorigin="anonymous"></script>
   </body>
 </html>

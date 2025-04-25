@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    min-height: 200px;
+    padding: 32px;
+    margin: 16px;
+    top: 200px;
+    left: 200px;
+}
+
+.relative {
+    background-color: aquamarine; 
+    position: relative;
+    bottom: 100px;
+    left: 200px;
+}
+
+.box-title {
+    font-size: 36px;
+    color: rgba(116, 83, 181, 0.615);
+    text-align: center;
+    
+}
+
+.absolute {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute .box-title {
+    color:  white;
+}
+
+.card {
+    background-color: teal;
+    width: 300px;
+    padding: 40px;
+    margin: 0;
+    position: relative;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

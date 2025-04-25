@@ -29,10 +29,14 @@ ul {
 
 .header {
   padding: 20px 0;
+  margin-top: 50px;
 }
 
 .hero {
   padding: 125px 0 195px;
+  background-image: url(../image/sections/hero/frutis.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-item {
@@ -248,4 +252,233 @@ ul {
   font-weight: 500;
   font-size: 18px;
   color: #fff;
+}
+
+.food-facts .container {
+  display: flex;
+}
+
+.food-facts-item::before {
+  content: "";
+  background-image: url(../image/icons/check.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.food-facts-item {
+  display: flex;
+  flex-shrink: 1;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.food-facts-item-desc {
+  margin: 0;
+}
+
+.food-facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-btn:hover {
+  border-color: orangered;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.header-btn:hover svg {
+  fill: orangered;
+  transition: 0.7s;
+}
+
+.header-btn svg {
+  fill: #1F1F1F;
+}
+
+.header-btn:nth-child(2):hover {
+  fill: orangered;
+  stroke: #1f1f1f;
+  transition: 0.7s;
+}
+
+.fa-regular .fa-user {
+  font-size: 20px;
+  color: black;
+}
+
+.fa-regular .fa-user:hover {
+  color: orangered;
+  transition: 0.7s;
+}
+
+.fa-user {
+  font-size: 24px;
+}
+
+.header-btn:hover .fa-user {
+  color: orangered;
+  transition: 0.7s;
+}
+
+.basket-counter {
+  border-radius: 100%;
+  background-color: orange;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 9px;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-btn {
+  position: relative;
+}
+
+.basket-quantity {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.baner {
+  background-color: #c2e8ce;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.baner-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.button-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 55px;
+  top: 10px;
+}
+
+.backdrop {
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.modal-close {
+  border: 1px solid #fafafa;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.modal-close .fa-xmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close:hover {
+  color: orange;
+  border: 1px solid orange;
+  transition: 0.5s;
+}
+
+.modal-title {
+  font-size: 16px;
+  color: orange;
+  margin: 0;
+}
+
+.modal-form label {
+  font-size: 14px;
+}
+
+.modal-form input {
+  padding: 4px 8px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.modal-form {
+  margin-top:  17px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-form textarea {
+  resize: none;
+  padding: 8px 16px;
+  height: 100px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+
+.modal-btn {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: transparent;
+  color: orange;
+  border: 1px solid orange;
+  transition: 0.5s;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

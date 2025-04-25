@@ -1,0 +1,112 @@
+.box {
+    background-color: blueviolet;
+    height: 1600px;
+    width: 100px;
+
+}
+
+.element {
+    background-color: lime;
+    width: 50%;
+    height: 20%;
+}
+
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 0.8em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.pseudo-element {
+    font-size: 18px;
+    color: plum;
+    margin-bottom: 150px;
+  }
+  
+  
+  .pseudo-element::after {
+    content: "";
+    display: inline-block;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: hotpink;
+  }
+  
+  .pseudo-element::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: peru;
+  }
+
+  .text-selection {
+    margin: 150px 0;
+  }
+
+  .text-selection::selection {
+    background-color: brown;
+  }
+
+.text-selection::first-letter {
+    font-size: 40px;
+    color: darkblue;
+}
+
+.background-example {
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKs9Z8zskuvIm99XjyxKyzTyItWbrvcfiMUQ&s);
+    background-repeat: no-repeat;
+}
+
+.bg-color {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.image-wrap {
+  width: 480px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+
+.image-wrap > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 2px dashed black;
+  border-radius: 4px;
+}
+
+.fill-image img {
+  object-fit: fill;
+}
+
+.contain-image img {
+  object-fit: contain;
+}
+
+.cover-image img {
+  object-fit: cover;
+}
+
+.scale-image img {
+  object-fit: scale-down;
+}
+
+.none-image img {
+  object-fit: none;
+}
